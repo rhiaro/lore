@@ -1,0 +1,28 @@
+{
+    "name": "rhiaro/lore",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/rhiaro/erh"
+        }
+    ],
+    "require": {
+      "rmccue/requests": ">=1.0",
+      "easyrdf/easyrdf": "*",
+      "ml/json-ld": "1.*",
+      "rhiaro/erh": "dev-stable"
+    },
+    "autoload": {
+      "files": [
+          "src/lore.php"
+        ]
+    },
+    "authors": [
+      {
+        "name": "Amy Guy",
+        "homepage": "https://rhiaro.co.uk/"
+      }
+    ]
+}
