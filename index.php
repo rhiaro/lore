@@ -11,7 +11,8 @@ $tags = array(
     "quest+for+brothers" => "https://rhiaro.co.uk/tags/quest+for+brothers",
 );
 $novels = array(
-     "https://rhiaro.co.uk/quest-for-brothers-3" => "Quest for Brothers (NaNoWriMo 2021)"
+     "https://rhiaro.co.uk/network-affect" => "Network Affect (NaNoWriMo 2022)"
+    ,"https://rhiaro.co.uk/quest-for-brothers-3" => "Quest for Brothers (NaNoWriMo 2021)"
     ,"https://rhiaro.co.uk/dumping-sky" => "Dumping Sky (NaNoWriMo 2020)"
     ,"https://rhiaro.co.uk/quest-for-brothers-2" => "Quest for Brothers (NaNoWriMo 2019)"
     ,"https://rhiaro.co.uk/birds" => "Birds (NaNoWriMo 2018)"
