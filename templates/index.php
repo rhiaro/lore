@@ -86,6 +86,7 @@
           <input type="text" name="tags[string]" id="tags"<?=(isset($_POST['tags']['string'])) ? ' value="'.$_POST['tags']['string'].'"' : ''?> />
         </p>
         <?if(isset($tags)):?>
+        <? if(!is_array($_POST['tags'])) { $_POST['tags'] = array(); } ?>
           <p>
             <label></label>
             <span>
@@ -100,14 +101,14 @@
           <label>Published</label>
           <select name="year" id="year">
             <?for($i=date("Y");$i>=2018;$i--):?>
-              <option value="<?=$i?>"<?=($i==$_POST['year']) ? " selected" : ""?>><?=$i?></option>
+              <option value="<?=$i?>"<?=(isset($_POST['year']) && $i==$_POST['year']) ? " selected" : ""?>><?=$i?></option>
             <?endfor?>
           </select>
           <select name="month" id="month">
             <?for($i=1;$i<=12;$i++):?>
               <? $i = date("m", strtotime("2016-$i-01")); ?>
               <option value="<?=$i?>"
-                <?=(isset($_POST['month']) && $_POST['month'] == $i) ? " selected" : (!isset($_POST['month']) && date("n") == $i) ? " selected" : ""?>>
+                <?=((isset($_POST['month']) && $_POST['month'] == $i) ? " selected" : (!isset($_POST['month']) && date("n") == $i)) ? " selected" : ""?>>
                 <?=date("M", strtotime("2016-$i-01"))?>
               </option>
             <?endfor?>
@@ -116,7 +117,7 @@
             <?for($i=1;$i<=31;$i++):?>
               <? $i = date("d", strtotime("2016-01-$i")); ?>
               <option value="<?=$i?>"
-                <?=(isset($_POST['day']) && $_POST['day'] == $i) ? " selected" : (!isset($_POST['day']) && date("j") == $i) ? " selected" : ""?>>
+                <?=((isset($_POST['day']) && $_POST['day'] == $i) ? " selected" : (!isset($_POST['day']) && date("j") == $i)) ? " selected" : ""?>>
                 <?=$i?>
               </option>
             <?endfor?>
