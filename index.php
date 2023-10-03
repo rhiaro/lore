@@ -8,10 +8,13 @@ date_default_timezone_set($tz);
 
 $tags = array(
     "nanowrimo" => "https://rhiaro.co.uk/tags/nanowrimo",
-    "quest+for+brothers" => "https://rhiaro.co.uk/tags/quest+for+brothers",
+    "quest for brothers" => "https://rhiaro.co.uk/tags/quest+for+brothers",
 );
+// $novels = Rhiaro\get_novels("https://rhiaro.co.uk/novels");
 $novels = array(
-     "https://rhiaro.co.uk/openings" => "Interplanetary Food Service"
+     "https://rhiaro.co.uk/a-seed-once-sown" => "A Seed, Once Sown"
+    ,"https://rhiaro.co.uk/the-island-in-winter" => "The Island in Winter"
+    ,"https://rhiaro.co.uk/openings" => "Interplanetary Food Service"
     ,"https://rhiaro.co.uk/network-affect" => "Network Affect (NaNoWriMo 2022)"
     ,"https://rhiaro.co.uk/quest-for-brothers-3" => "Quest for Brothers (NaNoWriMo 2021)"
     ,"https://rhiaro.co.uk/dumping-sky" => "Dumping Sky (NaNoWriMo 2020)"
